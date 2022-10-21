@@ -5,5 +5,8 @@ describe("joinNames", () => {
     expect(
       joinNames([{ name: "Bart" }, { name: "Lisa" }, { name: "Maggie" }])
     ).toBe("Bart, Lisa & Maggie");
+    expect(
+      joinNames([{ name: "John" }, { name: "Harry" }, { name: "Ste" }])
+    ).toBe("John, Harry & Ste");
   });
 });
